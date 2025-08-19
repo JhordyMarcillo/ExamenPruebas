@@ -1,0 +1,22 @@
+{
+  "name": "examen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "lint": "npm exec eslint .",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.33.0",
+    "jest": "^30.0.5"
+  }
+}
