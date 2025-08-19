@@ -18,17 +18,12 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Verificar si eslint se instaló correctamente
-        run: ls -la node_modules/.bin/eslint
-
       - name: Lint del Código
         run: npm exec eslint .
 
       - name: Instalar Dependencias
         run: npm install
 
-      - name: Verificar si jest se instaló correctamente
-        run: ls -la node_modules/.bin/jest
 
       - name: Ejecutar Pruebas
         run: npm test
