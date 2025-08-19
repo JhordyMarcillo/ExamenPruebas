@@ -4,6 +4,7 @@ describe('Pruebas para funciones matemáticas', () => {
   test('Convertir Fahrenheit a Celsius', () => {
     expect(toCelsius(32)).toBe(0.0);
     expect(toCelsius(212)).toBe(100.0);
+    expect(toCelsius(-40)).toBe(-40.0);
     expect(() => toCelsius('32')).toThrow(TypeError);
     expect(() => toCelsius(null)).toThrow(TypeError);
   });
@@ -11,6 +12,7 @@ describe('Pruebas para funciones matemáticas', () => {
   test('Convertir Celsius a Fahrenheit', () => {
     expect(toFahrenheit(0)).toBe(32.0);
     expect(toFahrenheit(100)).toBe(212.0);
+    expect(toFahrenheit(-40)).toBe(-40.0);
     expect(() => toFahrenheit('0')).toThrow(TypeError);
     expect(() => toFahrenheit(null)).toThrow(TypeError);
   });
