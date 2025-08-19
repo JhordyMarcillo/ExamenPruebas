@@ -18,9 +18,6 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Dar permisos de ejecución al eslint
-        run: chmod +x node_modules/.bin/eslint
-
       - name: Verificar si eslint se instaló correctamente
         run: ls -la node_modules/.bin/eslint
 
@@ -29,9 +26,6 @@ jobs:
 
       - name: Instalar Dependencias
         run: npm install
-    
-      - name: Dar permisos de ejecución al script
-        run: chmod +x node_modules/.bin/jest
 
       - name: Verificar si jest se instaló correctamente
         run: ls -la node_modules/.bin/jest
